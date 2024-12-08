@@ -1,0 +1,151 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.order-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[readonly] {
+  background-color: #f5f5f5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-reset {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+/* Untuk grup input dan tombol */
+.weight-group .input-group {
+  display: flex;
+  align-items: center;
+}
+
+.weight-group input {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.btn-calculate {
+  flex: 1;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-calculate:hover {
+  background-color: #1e88e5;
+}
+
+/* Tabel data (desktop) */
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#order-table th,
+#order-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* List data (responsif) */
+.order-list {
+  display: none; /* Default: tersembunyi */
+  margin-top: 20px;
+}
+
+.order-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsif: tampilkan list, sembunyikan tabel */
+@media screen and (max-width: 768px) {
+  #order-table {
+    display: none;
+  }
+  .order-list {
+    display: block;
+  }
+}
+
+/* Responsif: tampilkan list, sembunyikan tabel */
+@media screen and (max-width: 768px) {
+  #order-table {
+    display: none;
+  }
+  .order-list {
+    display: block;
+  }
+}
